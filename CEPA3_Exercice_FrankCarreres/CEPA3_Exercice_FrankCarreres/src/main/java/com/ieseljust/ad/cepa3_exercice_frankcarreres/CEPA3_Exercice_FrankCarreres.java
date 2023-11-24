@@ -58,12 +58,12 @@ public class CEPA3_Exercice_FrankCarreres {
             System.out.println("");
             System.out.print("> Enter the option: ");
             
-            char option = s.next().toUpperCase().charAt(0);
+            String option = s.nextLine();
 
             switch (option) {
                 
-                case 's':
-                case 'S':
+                case "s":
+                case "S":
                     if (mainPage < totalPages) {
                         mainPage++;
                         recordPageChange(laSession, mainPage);
@@ -73,8 +73,8 @@ public class CEPA3_Exercice_FrankCarreres {
                     }
                     break;
                 
-                case 'a':
-                case 'A':
+                case "a":
+                case "A":
                     
                     if (mainPage > 1) {
                         mainPage--;
@@ -85,8 +85,8 @@ public class CEPA3_Exercice_FrankCarreres {
                     }
                     break;
                 
-                case 'g':
-                case 'G':
+                case "g":
+                case "G":
                     System.out.print("> Enter the page number: ");
                     
                     int goToPage = s.nextInt();
@@ -100,8 +100,8 @@ public class CEPA3_Exercice_FrankCarreres {
                     }
                     break;
                 
-                case 'q':
-                case 'Q':
+                case "q":
+                case "Q":
                     running = false;
                     break;
                     
